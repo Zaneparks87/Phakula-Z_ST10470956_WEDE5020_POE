@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+</head>
+<body>
+ <header class="Global-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <h1>ZaneparksHyper</h1>
+            </div>
+<hr>
+            <nav class="main navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="departments.html" class="nav-link active">Departments</a></li>
+                    <li><a href="about_Us.html" class="nav-link">About Us</a></li>
+                    <li><a href="order.html" class="nav-link">Order/Delivery</a></li>
+                    <li><a href="contact_Us.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="faq.html" class="nav-link">Frequently Asked Questions</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="cartTrackerbtn" class="cart-toggle-button" aria-label="View Shopping Cart">
+                    <span class="cart-icon">Cart(<span id="globalCartCount">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+    
+<hr>
+
+    <!--two-column E-commerce layout context-->
+    <div class="department-layout-wrapper">
+
+        <!--Left Filter optioms Control sidebar-->
+        <aside class="sidebar-filters" aria-labelledby="ilterpanelHeading">
+            <h2 id="filterpanelHeading" class="sidebar-title"> Filter Products</h2>
+<hr>
+            <div class="filter-group">
+                <h3>Store Department</h3>
+                <div class="checkbox-list">
+                    <label class="checkbox-label">
+                         <img src="_images\Men Clothing.jpg" alt="Men colthing image" height="100px" width="150px">
+                        <input type="checkbox" name="deptFilter" value="men" checked> Men's Clothing
+                    </label>
+                    <label class="checkbox-label">
+                        <img src="_images\Women clothing.jpg" alt="Women clothing image" height="100px" width="100px">
+                        <img src="_images\Everyday tops Women.jpg" alt="Everyday tops image" height="100px" width="100px">
+                        <input type="checkbox" name="deptFilter" value="women" checked> Women's Clothing
+                    </label>
+
+                    <label class="checkbox-label">
+                         <img src="_images\Kids clothing.jpg" alt="Kids clothing image" height="100px" width="100px">
+                        <input type="checkbox" name="deptFilter" value="kids" checked> Kid's Clothing
+                    </label>
+
+                    <label class="checkbox-label">
+                         <img src="_images\bags and footwear.jpg" alt="bags and footwear image" height="100px" width="100px">
+                         <img src="_images\Accessories.jpg" alt="Accessories" height="100px" width="100px">
+                        <input type="checkbox" name="deptFilter" value="accessories" checked> Accessories
+                    </label>
+
+                    <label class="checkbox-label">
+                         <img src="_images\homewear.jpg" alt="Home essentials image" height="100px" width="100px">
+                          <img src="_images\Kitchen.jpg" alt="Homewear" height="100px" width="100px">
+                        <input type="checkbox" name="deptFilter" value="home" checked> Home Essencials 
+                    </label>
+                </div>
+            </div>
+<hr>
+            <div class="filter-group">
+                <h3>Sort Order</h3>
+                <select id="pricesorter" class=" form-dropdown">
+                    <option value="featured">Featured Items</option>
+                    <option value="low-high">Price:Low to High</option>
+                    <option value="high-low">Price:High to low</option>
+                </select>
+            </div>
+        </aside>
+<hr>
+        <!--Right main Multi-department interactive products display grid-->
+        <main class="department-main-display">
+            <div class="department-header">
+                <h2>Our live stock collections</h2>
+                <p class="result-tracker">select premium items across our departments to add to yuor order.</p>
+            </div>
+<hr>
+            <div class="product-grid-container">
+                <!--Product Card Variant 1:clothing Department-->
+                <article class="product-item-card">
+                    <div class="product-details">
+                        <p class="item-department"> Clothing / Men</p>
+                         <img src="_images\Straight Jean.jpg" alt="Straightjeans image" height="100px" width="100px">
+                        <h3> Premium Straight Jeans</h3>
+                        <div class="size-selection-wrapper">
+                            <label for="sizeJeans">select side:</label>
+                            <select id="sizeJeans" class="form-dropdown size dropdown">
+                                <option value="30">size 30</option>
+                                <option value="32">size 32</option>
+                                <option value="34">size 34</option>
+                                <option value="36">size 36</option>
+                            </select>
+                        </div>
+                        <div class="Card-footer-action">
+                            <span class="product-price">R600</span>
+                            <a href="order.html?product=jeans" class="btn btn-quick-add">Order Now</a>
+                        </div>
+                    </div>
+                </article>
+<hr>
+                <!--product car variant 2: Home department-->
+                <article class="product-item-card">
+                    <div class="prduct details">
+                        <p class="item-department"> Homewear Essentials</p>
+                        <h3>Abosorbent Microfiber Towel set</h3>
+                        <img src="_images\Rustic Charm - Pure Linen & Organic cotton Waffle Tea Towels.jpg" alt="Kitchen towels image" height="100px" width="100px">
+                        <p class="size-tracker-text">status: 5 packs left at the store</p>
+                        <div class="Card-footer-action">
+                            <span class="product-price">R190</span>
+                            <a href="order.html?prduct=towels" class="btn btn-quick-add">Order Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+<hr>
+    <footer class="global-newsletter">
+        <section class="newsletter-section" aria-labelledby="NewsletterHeading">
+            <div class="newsletter-content-box">
+                <h3 id="newssletterHeadng">Subscribe & Save 15%</h3>
+                <p>Subscribe to our newsletter and receive 15% off your first online order</p>
+                <form id="storeNewsletterform" class="newsletter-inline-form">
+                    <label for="SubscriberEmail" class="visually-hidden">Email Address:</label>
+                    <input type="email" id="SubscriberEmail" class="form-input" required placeholder="Enter ypur email address">
+                    <button type="submit" class="btn btn-submit">Join Now</button>
+                </form>
+            </div>
+        </section>
+        <div class="footer-bottom-bar">
+            <p>&COPY; 2026 ZaneparksHyper. All Right Reserved. Designed for premium retail excellence.</p>
+        </div>
+      </footer>
+</body>
+</html>
