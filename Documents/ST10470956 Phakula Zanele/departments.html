@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department</title>
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
  <header class="Global-header">
@@ -12,7 +13,7 @@
                 <h1>ZaneparksHyper</h1>
             </div>
 <hr>
-            <nav class="main navigation">
+            <nav class="main-navigation">
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="departments.html" class="nav-link active">Departments</a></li>
@@ -36,11 +37,11 @@
     <div class="department-layout-wrapper">
 
         <!--Left Filter optioms Control sidebar-->
-        <aside class="sidebar-filters" aria-labelledby="ilterpanelHeading">
+        <aside class="sidebar-filters" aria-labelledby="filterpanelHeading">
             <h2 id="filterpanelHeading" class="sidebar-title"> Filter Products</h2>
 <hr>
             <div class="filter-group">
-                <h3>Store Department</h3>
+                <h3>Store departments</h3>
                 <div class="checkbox-list">
                     <label class="checkbox-label">
                          <img src="_images\Men Clothing.jpg" alt="Men colthing image" height="100px" width="150px">
@@ -90,14 +91,14 @@
 <hr>
             <div class="product-grid-container">
                 <!--Product Card Variant 1:clothing Department-->
-                <article class="product-item-card">
+                <article class="product-item-card" data-category="Men">
                     <div class="product-details">
                         <p class="item-department"> Clothing / Men</p>
                          <img src="_images\Straight Jean.jpg" alt="Straightjeans image" height="100px" width="100px">
                         <h3> Premium Straight Jeans</h3>
                         <div class="size-selection-wrapper">
                             <label for="sizeJeans">select side:</label>
-                            <select id="sizeJeans" class="form-dropdown size dropdown">
+                            <select id="sizeJeans" class="form-dropdown">
                                 <option value="30">size 30</option>
                                 <option value="32">size 32</option>
                                 <option value="34">size 34</option>
@@ -128,18 +129,7 @@
         </main>
     </div>
 <hr>
-    <footer class="global-newsletter">
-        <section class="newsletter-section" aria-labelledby="NewsletterHeading">
-            <div class="newsletter-content-box">
-                <h3 id="newssletterHeadng">Subscribe & Save 15%</h3>
-                <p>Subscribe to our newsletter and receive 15% off your first online order</p>
-                <form id="storeNewsletterform" class="newsletter-inline-form">
-                    <label for="SubscriberEmail" class="visually-hidden">Email Address:</label>
-                    <input type="email" id="SubscriberEmail" class="form-input" required placeholder="Enter ypur email address">
-                    <button type="submit" class="btn btn-submit">Join Now</button>
-                </form>
-            </div>
-        </section>
+    <footer class="global-footer">
         <div class="footer-bottom-bar">
             <p>&COPY; 2026 ZaneparksHyper. All Right Reserved. Designed for premium retail excellence.</p>
         </div>

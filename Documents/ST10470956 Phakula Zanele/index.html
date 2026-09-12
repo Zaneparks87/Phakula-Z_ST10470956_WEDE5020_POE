@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <hr>
@@ -13,8 +17,7 @@
             <div class="brand-logo">
                 <h1>ZaneparksHyper</h1>
             </div>
-<hr>
-            <nav class="main navigation">
+            <nav class="nav-links">
                 <ul>
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="departments.html" class="nav-link">Departments</a></li>
@@ -25,16 +28,16 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button id="cartTrackerbtn" class="cart-toggle-button" aria-label="View Shopping Cart">
-                    <span class="cart-icon">Cart(<span id="globalCartCount">0</span>)
-                </button>
+                <a href="order.html" class="cart-toggle-button">
+                    Cart(<span id="globalCartCount">0</span>)
+                </a>
             </div>
         </div>
     </header>
 <hr>
     <!-- 2. Rotating Seasonal Hero Banner Section-->
      <section class="hero-showcase" aria-label="Seasonal Promotion">
-        <div class="hero-overlay">
+        <div class="hero-content-box">
             <div class="hero-text content">
                 <span class="hero-tagline">New Autumn Arrivals</span>
                 <h2>Premium Everyday Essentials</h2>
@@ -50,7 +53,7 @@
      <!-- 3. Primary Department Entry Grid Grid-->
       <main class="homepage-main-content">
         <section class="department-grid-section" aria-labelledby="deptGridHeading">
-            <h2 id="deptGridHeading" class="sectin-title">Shop by Department</h2>
+            <h2 id="deptGridHeading" class="section-title">Shop by Department</h2>
             <p class="section-subtitle">Find everything your family needs across our specialized mordern inventory bays</p>
 <hr>
             <div class="department-cards-container">
@@ -91,38 +94,21 @@
                     </article>
             </div>
         </section>
-<hr>
-        <!--Value Proposition Ribbon-->
-        <section class="store-feature-ribbon" aria-label="store benefits">
-            <div class="feature-item">
-                <h4>Click & Collect</h4>
-                <p>Pick up cross-department items at our counter inside with 4 days.</p>
-            </div>
-            <div class="feature-item">
-                <h4>Preminm Quality</h4>
-                <p>Every product line is chosen for material excellence and durability</p>
-            </div>
-            <div class="feature-item">
-                <h4>seamless Returns</h4>
-                <p>Enjoy simple,hassle-free 30 day exchange window storewide.</p>
-            </div>
-        </section>
       </main>
 <hr>
       <!--Interactive Subscriber newsletter-->
-      <footer class="global-newsletter">
-        <section class="newsletter-section" aria-labelledby="NewsletterHeading">
+      <footer class="global-footer">
+        <section class="footer-newsletter-section" aria-labelledby="NewsletterHeading">
             <div class="newsletter-content-box">
                 <h3 id="newssletterHeadng">Subscribe & Save 15%</h3>
                 <p>Subscribe to our newsletter and receive 15% off your first online order</p>
                 <form id="storeNewsletterform" class="newsletter-inline-form">
                     <label for="SubscriberEmail" class="visually-hidden">Email Address:</label>
-                    <input type="email" id="SubscriberEmail" class="form-input" required placeholder="Enter ypur email address">
+                    <input type="email" id="SubscriberEmail" class="form-input" required placeholder="Enter your email address" required>
                     <button type="submit" class="btn btn-submit">Join Now</button>
                 </form>
             </div>
         </section>
-<hr>
         <div class="footer-bottom-bar">
             <p>&COPY; 2026 ZaneparksHyper. All Right Reserved. Designed for premium retail excellence.</p>
         </div>

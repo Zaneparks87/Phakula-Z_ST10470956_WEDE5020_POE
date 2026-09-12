@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order|Delivery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <hr>  
@@ -65,7 +66,11 @@
                         <div class="radio-selection-block">
                             <label class="radio-custom-lable">
                                 <input type="radio" name="deliverystrategy" value="courier" checked>
-                                <span>Standard Delivery within Gauteng delivery fee R45 & Nation-wide the delivery fee is R85 </span>
+                                <span>Standard Delivery within Gauteng delivery fee R45</span>
+                            </label>
+                            <label class="radio-custom-lable">
+                                <input type="radio" name="deliverystrategy" value="pickup" checked>
+                                <span>Nation-wide delivery fee R85</span>
                             </label>
                             <label class="radio-custom-lable">
                                 <input type="radio" name="deliverystrategy" value="pickup" checked>
@@ -76,7 +81,7 @@
 
                     <div class="form-field" id="shippingAddressBlock">
                         <label for="shippingAddress">Full Physical Delivery Address</label>
-                        <textarea id="shippingAddress" class="form-control text-area-input" rows="4" required placeholder="Enter street number, Suburb, city, and postal code."></textarea>
+                        <textarea id="shippingAddress" class="form-control" rows="3" required placeholder="Enter street number, Suburb, city, and postal code."></textarea>
                     </div>
 
                     <button type="submit" class="btn-btn-form-submit">Confirm & place Order</button>
@@ -85,36 +90,20 @@
 <hr>
             <!--right side logistics breakdown and delivery summaries-->
             <aside class="location-details-sidebar">
-                <div class="details-section-card-logistics-summary-card">
+                <div class="details-section-card">
                     <h4>Distribuion & transit Timelines</h4>
+                <p>ZaneparksHyper processes all order queries through validated, protected system endpoints for secure retail operation.</p>
                     <ul>
                         <li><strong>Standard Courier Delivery:</strong>3 to 5 buisness days Nation-wide.</li>
                         <li><strong>Click & Collect:</strong>packaged and varified for Physical instore pickup within 4 hours.</li>
                         <li><strong>Tracking Portals:</strong> A unique SMS tracking number will be sent the moment your parcel is out for delivery.</li>
                     </ul>
                 </div>
-<hr>
-                <div class="details-section-card-secure-badge-card">
-                    <h4>Shopping Cart Security</h4>
-                    <p>ZaneparksHyper processes all order queries through validated, protected system endpoints for secure retail operation.</p>
-                </div>
             </aside>
         </div>
     </main>
 <hr>
-    <footer class="global-newsletter">
-        <section class="newsletter-section" aria-labelledby="NewsletterHeading">
-            <div class="newsletter-content-box">
-                <h3 id="newssletterHeadng">Subscribe & Save 15%</h3>
-                <p>Subscribe to our newsletter and receive 15% off your first online order</p>
-                <form id="storeNewsletterform" class="newsletter-inline-form">
-                    <label for="SubscriberEmail" class="visually-hidden">Email Address:</label>
-                    <input type="email" id="SubscriberEmail" class="form-input" required placeholder="Enter ypur email address">
-                    <button type="submit" class="btn btn-submit">Join Now</button>
-                </form>
-            </div>
-        </section>
-<HR>
+    <footer class="global-footer">
         <div class="footer-bottom-bar">
             <p>&COPY; 2026 ZaneparksHyper. All Right Reserved. Designed for premium retail excellence.</p>
         </div>
