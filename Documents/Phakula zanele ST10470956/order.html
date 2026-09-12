@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order|Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <hr>  
+    <header class="Global-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <h1>ZaneparksHyper</h1>
+            </div>
+<hr>
+            <nav class="main navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="departments.html" class="nav-link">Departments</a></li>
+                    <li><a href="about_Us.html" class="nav-link">About Us</a></li>
+                    <li><a href="order.html" class="nav-link active">Order/Delivery</a></li>
+                    <li><a href="contact_Us.html" class="nav-link">contact Us</a></li>
+                    <li><a href="faq.html" class="nav-link">Frequently Asked Questions</a></li>
+                </ul>
+            </nav>
+
+<hr>
+            <div class="header-actions">
+                <a href="order.html" id="cartTrackerbtn" class="cart-toggle-button active-cart">Checkout Cart(3)</a>
+            </div>
+        </div>
+    </header>
+    <main class="order-page-container">
+        <div class="content-header-container">
+            <h2>Complete Your Order</h2>
+            <p class="lead-paragraph">Review selected products and choose your regional courier transit routes or in store collection.</p>
+        </div>
+<hr>
+        <div class="order-split-layout">
+            <!--leftside: order customization and delivery form-->
+            <section class="form-row">
+                <h3>Delivery & Customer Details</h3>
+                <form id="secureCheckoutForm" class="styled-validated-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="customerFullName">Full Name</label>
+                            <input type="text" id="customerFullName" class="form-control" required placeholder="e.g.Bongane Mashabela">
+                        </div>
+                        <div class="form-field">
+                            <label for="customerPhone">Phone Number</label>
+                            <input type="tel" id="customerPhone" class="form-control" required placeholder="e.g.0123456789">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="itemSelection">Confirm man product allocation</label>
+                        <select id="itemSelection" class="form-control-dropdown-select">
+                            <option value="jeans">Premium Straight Jeans - R600</option>
+                            <option value="towels">Abosorbent Microfiber Towel Set - R190</option>
+                            <option value="newborn Essentials">Pampers Box - R570</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Delivery method</label>
+                        <div class="radio-selection-block">
+                            <label class="radio-custom-lable">
+                                <input type="radio" name="deliverystrategy" value="courier" checked>
+                                <span>Standard Delivery within Gauteng delivery fee R45</span>
+                            </label>
+                            <label class="radio-custom-lable">
+                                <input type="radio" name="deliverystrategy" value="pickup" checked>
+                                <span>Nation-wide delivery fee R85</span>
+                            </label>
+                            <label class="radio-custom-lable">
+                                <input type="radio" name="deliverystrategy" value="pickup" checked>
+                                <span>4 hour click & collect(Free pickcup)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-field" id="shippingAddressBlock">
+                        <label for="shippingAddress">Full Physical Delivery Address</label>
+                        <textarea id="shippingAddress" class="form-control" rows="3" required placeholder="Enter street number, Suburb, city, and postal code."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-btn-form-submit">Confirm & place Order</button>
+                </form>
+            </section>
+<hr>
+            <!--right side logistics breakdown and delivery summaries-->
+            <aside class="location-details-sidebar">
+                <div class="details-section-card">
+                    <h4>Distribuion & transit Timelines</h4>
+                <p>ZaneparksHyper processes all order queries through validated, protected system endpoints for secure retail operation.</p>
+                    <ul>
+                        <li><strong>Standard Courier Delivery:</strong>3 to 5 buisness days Nation-wide.</li>
+                        <li><strong>Click & Collect:</strong>packaged and varified for Physical instore pickup within 4 hours.</li>
+                        <li><strong>Tracking Portals:</strong> A unique SMS tracking number will be sent the moment your parcel is out for delivery.</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+<hr>
+    <footer class="global-footer">
+        <div class="footer-bottom-bar">
+            <p>&COPY; 2026 ZaneparksHyper. All Right Reserved. Designed for premium retail excellence.</p>
+        </div>
+      </footer>
+</body>
+</html>
