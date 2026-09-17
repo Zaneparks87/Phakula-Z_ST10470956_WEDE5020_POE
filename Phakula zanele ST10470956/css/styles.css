@@ -18,15 +18,15 @@
 
 body {
     font-family: var(--font-body);
-    background-color: var(--color-ivory);
-    color: var(--color-mocha);
+    background-color: #F5F2EC;
+    color:#4E4034;
     line-height: 1.6;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: var(--color-greige);
+    background-color:#D9D2C6;
     margin: 0;
 }
 
@@ -43,8 +43,9 @@ hr {
 }
 
 .Global-header {
-    background-color: var(--color-white);
-    padding: 1.25rem 2rem;
+    background-color:#ffffff;
+    padding: 5rem 4rem;
+    min-width: 500px;
 }
 
 .header-container {
@@ -59,7 +60,7 @@ hr {
 
 .brand-logo h1 {
     font-family: var(--font-header);
-    color: var(--color-mocha);
+    color:#4E4034;
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -74,7 +75,7 @@ hr {
 
 .nav-link a {
     text-decoration: none;
-    color: var(--color-walnut);
+    color:#8C7864;
     font-weight: 600;
     font-size: 0.95rem;
     transition: color 0.2s ease;
@@ -82,14 +83,14 @@ hr {
 
 .nav-link a:hover,
 .nav-link a.active {
-    color: var(--color-mocha);
-    border-bottom: 2px solid var(--color-stone);
+    color: #4E4034;
+    border-bottom: 2px solid #B7A996;
 }
 
 .header-actions .cart-toggle-button {
     text-decoration: none;
-    background-color: var(--color-mocha);
-    color: var(--color-ivory);
+    background-color: #4E4034;
+    color:#F5F2EC;
     padding: 0.6rem 1.25rem;
     border-radius: 4px;
     font-weight: bold;
@@ -98,16 +99,17 @@ hr {
 }
 
 .header-actions .cart-toggle-button:hover {
-    background-color: var(--color-walnut);
+    background-color:#8C7864;
 }
 
 
 .hero-showcase {
-    background-color: var(--color-greige);
+    background-color:#D9D2C6;
     background-image: linear-gradient(rgba(78, 64, 52, 0.45), rgba(78, 64, 52, 0.45));
     background-size: cover;
     background-position: center;
-    padding: 6rem 2rem;
+    padding: 7rem 2rem;
+    min-height: 500px;
     display: flex;
     justify-content: center;
 }
@@ -127,7 +129,7 @@ hr {
 
 .hero-tagline {
     display: block;
-    color: var(--color-stone);
+    color:#B7A996;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.85rem;
@@ -137,14 +139,14 @@ hr {
 
 .hero-text h2 {
     font-family: var(--font-header);
-    color: var(--color-mocha);
+    color:#4E4034;
     font-size: 2.4rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero-text p {
-    color: var(--color-walnut);
+    color: #8C7864;
     margin-bottom: 2rem;
 }
 
@@ -167,12 +169,12 @@ hr {
 }
 
 .btn-primary {
-    background-color: var(--color-mocha);
-    color: var(--color-ivory);
+    background-color: #4E4034;
+    color: #F5F2EC;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-walnut);
+    background-color:#8C7864;
 }
 
 .homepage-main-content {
@@ -183,30 +185,39 @@ hr {
 
 .section-title {
     font-family: var(--font-header);
-    color: var(--color-mocha);
+    color:  #4E4034;
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .section-subtitle {
-    color: var(--color-walnut);
+    color: #8C7864;
     text-align: center;
     margin-bottom: 3rem;
     font-size: 1.05rem;
 }
 
 
-.department-cards-container {
+.catalogue-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
+.catalouge-layout-wrapper{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
 .catalogue-card {
-    background-color: var(--color-white);
-    border: 1px solid var(--color-greige);
+    background-color: #ffffff;
+    border: 1px solid #D9D2C6;
     padding: 2.5rem 2rem;
     border-radius: 4px;
     display: flex;
@@ -217,25 +228,25 @@ hr {
 
 .catalogue-card:hover {
     box-shadow: 0 8px 24px rgba(140, 120, 100, 0.1);
-    border-color: var(--color-stone);
+    border-color:#B7A996;
 }
 
 .card-body h3 {
     font-family: var(--font-header);
-    color: var(--color-mocha);
+    color: #4E4034;
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
 .card-body p {
-    color: var(--color-walnut);
+    color: #8C7864;
     font-size: 0.95rem;
     margin-bottom: 2rem;
 }
 
 .card-cta-link {
     text-decoration: none;
-    color: var(--color-mocha);
+    color:#4E4034;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -243,12 +254,12 @@ hr {
 }
 
 .card-cta-link:hover {
-    color: var(--color-stone);
+    color: #B7A996;
 }
 
 .global-footer {
-    background-color: var(--color-mocha);
-    color: var(--color-ivory);
+    background-color:#4E4034;
+    color: #F5F2EC;
     margin-top: 6rem;
 }
 
@@ -260,13 +271,13 @@ hr {
 }
 
 .footer-newsletter-section h3 {
-    font-family: var(--font-header);
+    font-family:var(--font-header);
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .footer-newsletter-section p {
-    color: var(--color-greige);
+    color:#D9D2C6;
     margin-bottom: 2rem;
 }
 
@@ -278,20 +289,20 @@ hr {
 .form-input {
     flex-grow: 1;
     padding: 0.75rem 1rem;
-    border: 1px solid var(--color-walnut);
+    border: 1px solid #8C7864;
     border-radius: 4px;
-    background-color: var(--color-ivory);
-    color: var(--color-mocha);
+    background-color: #F5F2EC;
+    color: #4E4034;
 }
 
 .btn-submit {
-    background-color: var(--color-greige);
-    color: var(--color-mocha);
+    background-color: #D9D2C6;
+    color: #4E4034;
 }
 
 .btn-submit:hover {
-    background-color: var(--color-stone);
-    color: var(--color-white);
+    background-color: #B7A996;
+    color: #ffffff;
 }
 
 .footer-bottom-bar {
@@ -299,7 +310,7 @@ hr {
     padding: 1.5rem;
     border-top: 1px solid rgba(217, 210, 198, 0.1);
     font-size: 0.85rem;
-    color: var(--color-stone);
+    color:#B7A996;
 }
 
 @media (max-width: 768px) {
