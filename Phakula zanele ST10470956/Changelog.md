@@ -34,4 +34,5 @@ evididence pictures of the reponsive layouts being the the mobile, tablet and de
 on css i added min-width 1200px to increase the width of the background color on index.html, catalogue.html, contact_us.html,order.html,faq.html and about_us.html.
 moved saved png images under assets, that where you will find all images.
 added a changelog file. at first i had everything inside the README.md file.
+Executed staging commands and verified Git commits to sync hardcoded Proposal 2 color scheme patches directly to the main production branch.
 
