@@ -2,16 +2,16 @@
 screen size 1280 x 800 pixels (Nest Hub Max) 
 observation: navigation menu links flex horizontally across the top axis, while the primary department cards and hero promotional layouts expand cleanly to fill the widescreen canvas.
 *edvidence:* 
-![Desktop Screen Layout view](assets\desktop.png)
+![ desktop screenshot](\assets\Desktop.png)
 
 2.  Tablet 
 screen size 1032 x 1376 pixels (iPad Pro13)
 obvsevation: Media queries adjust smoothly. The structural grids adjust padding parameters and scale down card structures to align perfectly without pushing content off the edges of the tablet dimensions.
 *edvidence:*
-![tablet Screen Layout View](assets\tablet.png)
+![tablet screenshot](assets\tablet.png)
 
 3.mobile 
 screen size:440 x 956 pixels (iPhone16 ProMax)
 observation: The top header menu options stack safely in an accessible alignment layout. The white background card container stretches horizontally (min-width:1200px) from edge to edge to remove empty side gaps on phone screen widths.
 *evidence:*
-![mobile screen layout view](assets\mobile.png)
+![mobile screenshot](assets\mobile.png)
